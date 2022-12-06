@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boshlash" class="boshlash" onclick="boshlash()">Boshlash</button>
+    <script>
+        function boshlash(){
+            document.getElementById('savollar1').style.display="block";
+            document.getElementById('boshlash').style.display="none";
+        }
+    </script>
+
+
+    <div id="savollar1" class="savollar1" style="display: none;">
+        <h2>Ismim nima?</h2>
+        <button id="right" class="right" onclick="right()">Ibrohim</button>
+        <button id="wrong1" class="wrong" onclick="wrong1()">Alisher</button>
+        <button id="wrong2" class="wrong" class="wrong" onclick="wrong2()">Abdug`ani</button>
+        <button id="wrong3" class="wrong" class="wrong" onclick="wrong3()">Anvar</button>
+  
+            <a href="/quizAPP/quizOnPage.html" id="taktorlash" style="display: none;"> Takrorlash</a>
+
+            <button type="button" id="Savol2" onclick="savol2()" style="display: none;">2-savol</button>
+            <script>
+                function right() {      
+                    document.getElementById('right').style.backgroundColor='green';
+                    document.getElementById('wrong1').style.backgroundColor='red';
+                    document.getElementById('wrong2').style.backgroundColor='red';
+                    document.getElementById('wrong3').style.backgroundColor='red';
+                    document.getElementById('Savol2').style.display="block";
+                    document.getElementById('wrong1').removeAttribute('onclick');
+                    document.getElementById('wrong2').removeAttribute('onclick');
+                    document.getElementById('wrong3').removeAttribute('onclick');
+                }
+                function wrong1() {
+                    document.getElementById('wrong1').style.backgroundColor='red';
+                    document.getElementById('wrong2').style.display="none";
+                    document.getElementById('wrong3').style.display="none";
+                    document.getElementById('right').style.display="none";
+                    document.getElementById('taktorlash').style.display="block";
+                }
+                function wrong2() {
+                    document.getElementById('wrong1').style.backgroundColor='red';
+                    document.getElementById('wrong2').style.display="none";
+                    document.getElementById('wrong3').style.display="none";
+                    document.getElementById('right').style.display="none";
+                    document.getElementById('taktorlash').style.display="block";
+                }
+                function wrong3() {
+                    document.getElementById('wrong1').style.backgroundColor='red';
+                    document.getElementById('wrong2').style.display="none";
+                    document.getElementById('wrong3').style.display="none";
+                    document.getElementById('right').style.display="none";
+                    document.getElementById('taktorlash').style.display="block";
+                }
+            </script>
+
+
+
+
+    </div>
+
+    <script>
+        function savol2(){
+            document.getElementById('savollar1').style.display="none";
+            document.getElementById('savollar2').style.display="block";
+            document.getElementById('Savol2').style.display="none";
+        }
+    </script>
+
+
+
+    <div id="savollar2" class="savollar2" style="display: none;">
+        <h2>Nechinchi yilman?</h2>
+        <button id="wrong2.1" class="wrong" onclick="wrong2_1()">1877</button>
+        <button id="wrong2.2" class="wrong" onclick="wrong2()">1178</button>
+        <button id="right2"  class="right" onclick="right2()">1997</button>
+        <button id="wrong2.3" class="wrong" onclick="wrong3()">1389</button>
+      
+            <a href="/quizAPP/quizOnPage.html" id="taktorlash" style="display: none;"> Takrorlash</a>
+            <button type="button" id="savol3" onclick="" style="display: none;">3-savol</button>
+  
+
+
+
+
+    <script>
+        function right2() {      
+            document.getElementById('right2').style.backgroundColor='green';
+            document.getElementById('wrong2.1').style.backgroundColor='red';
+            document.getElementById('wrong2.2').style.backgroundColor='red';
+            document.getElementById('wrong2.3').style.backgroundColor='red';
+            document.getElementById('savol3').style.display="block";
+            document.getElementById('wrong2.1').removeAttribute('onclick');
+            document.getElementById('wrong2.2').removeAttribute('onclick');
+            document.getElementById('wrong2.3').removeAttribute('onclick');
+        }
+        function wrong2_1() {
+            document.getElementById('wrong1').style.backgroundColor='red';
+            document.getElementById('wrong2').style.display="none";
+            document.getElementById('wrong3').style.display="none";
+            document.getElementById('right').style.display="none";
+            document.getElementById('taktorlash').style.display="block";
+        }
+    </script>
+</div>
+
+
+
+</body>
+</html>

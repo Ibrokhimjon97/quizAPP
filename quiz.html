@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #div1{
+            display: none;
+            height: 80vh;
+            width: 90%;
+        }
+    </style>
+    <button id="boshlash">Testni boshlash</button>
+
+    <style>
+        .savolDiv{
+            width: 150px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red;
+            margin: 5px;
+        }
+            .togrisi{
+            width: 150px;
+            height: 50px;
+            background-color: rgb(232, 255, 21);
+            border: 1px solid red;
+            margin: 5px;
+            }
+        
+    </style>
+         <div id="savol">
+    <h2>Nechanchi yil tug`ilganman?</h2>
+    <div class="savolDiv" id="right" onclick="togrisi()">1997</div>
+    <div id="wrong">1895</div>
+    <div id="wrong">1985</div>
+    <div id="wrong">1992</div>
+        </div>
+
+
+<p id="natija">0</p>
+<script>
+ 
+    let boshlash = document.getElementById('boshlash');
+    boshlash.addEventListener('click', function(){
+    document.getElementById('div1').style.display="block";
+    document.getElementById('boshlash').style.display="none";
+    })
+</script>
+
+<script src="/quizAPP/js.js"></script>
+</body>
+</html>
